@@ -17,6 +17,7 @@ for x in json:
   transfer_unit = "MB"
   d_unit = "MB"
   u_unit = "MB"
+  a_unit = "MB"
 
   #Convert Unit To GB For Those Number Which Exceeds 1024MB
   if(transfer_enable_int > 1024):
