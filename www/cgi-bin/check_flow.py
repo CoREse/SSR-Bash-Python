@@ -21,23 +21,23 @@ for x in json:
 	if(str(x[u"port"]) == str(getport)):
 		portexist=1
 		transfer_enable_int = int(x[u"transfer_enable"])/1024/1024;
-		d_int = int(x[u"d"])/1024/1024;
+		a_int = (int(x[u"d"])+int(x[u"u"]))/1024/1024;
 		transfer_unit = "MB"
-		d_unit = "MB"
+		a_unit = "MB"
 
 		#流量单位转换
 		if(transfer_enable_int > 1024):
 			transfer_enable_int = transfer_enable_int/1024
 			transfer_unit = "GB"
-		if(transfer_enable_int > 1024):
-			d_int = d_int/1024
-			d_unit = "GB"
+		if(a_int > 1024):
+			a_int = a_int/1024
+			a_unit = "GB"
 		break
 
 if(portexist==0):
 	getport = "未找到此端口，请检查是否输入错误！"
-	d_int = ""
-	d_unit = ""
+	a_int = ""
+	a_unit = ""
 	transfer_enable_int = ""
 	transfer_unit = ""
 
@@ -123,7 +123,7 @@ formhtml = '''
 
 
 '''
-print formhtml % (getport,d_int,d_unit,transfer_enable_int,transfer_unit)
+print formhtml % (getport,a_int,a_unit,transfer_enable_int,transfer_unit)
 
 print footer
 f.close();
