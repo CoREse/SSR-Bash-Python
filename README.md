@@ -29,13 +29,13 @@ ShadowsocksR多用户管理脚本（基于官方mujson版本）
 - 无法删除最后一名用户（官方限制）
 
 ## 安装 ##
-    wget -N --no-check-certificate https://raw.githubusercontent.com/FunctionClub/SSR-Bash-Python/master/install.sh && bash install.sh
+    wget -N --no-check-certificate https://raw.githubusercontent.com/CoREse/SSR-Bash-Python/master/install.sh && bash install.sh
 
 ## 卸载 ##
-    wget -N --no-check-certificate https://raw.githubusercontent.com/FunctionClub/SSR-Bash-Python/master/uninstall.sh && bash uninstall.sh
+    wget -N --no-check-certificate https://raw.githubusercontent.com/CoREse/SSR-Bash-Python/master/uninstall.sh && bash uninstall.sh
 
 ## 自检 ##
-    wget -N --no-check-certificate https://raw.githubusercontent.com/FunctionClub/SSR-Bash-Python/master/self-check.sh && bash self-check.sh
+    wget -N --no-check-certificate https://raw.githubusercontent.com/CoREse/SSR-Bash-Python/master/self-check.sh && bash self-check.sh
 
 ## 截图 ##
 ![1.png](1.png)
